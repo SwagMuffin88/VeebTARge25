@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Box shadow</title>
+    <style>
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: #e1ddda;
+            margin: 20px;
+            display: inline-block;
+        }
+        p.one {
+            box-shadow: none;
+        }
+        p.two {
+            box-shadow: #777777 4px 4px 4px;
+        }
+        p.three {
+            box-shadow: #777777 8px 8px 8px;
+        }
+        p.four {
+            box-shadow: #777777 0 0 4px 4px;
+        }
+        p.five {
+            box-shadow: #777777 0 0 3px 3px inset;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p>
+    <p class="four"></p>
+    <p class="five"></p>
+
+</body>
+</html>
