@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>List, Table & Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>
+        Poetry workshops
+    </h1>
+
+    <p>
+        We will be conducting a number of poetry workshops and symposiums throughout the year.
+    </p>
+    <p>
+        Please note that the following events are free to members:
+    </p>
+
+    <ul>
+        <li>
+            A Poetic Perspective
+        </li>
+        <li>
+            Walt Whitman at War
+        </li>
+        <li>
+            Found Poems and Outsider Poetry
+        </li>
+    </ul>
+
+    <table>
+        <tr>
+            <th class="round"></th>
+            <th>
+                New York
+            </th>
+            <th>
+                Chicago
+            </th>
+            <th>
+                San Francisco
+            </th>
+        </tr>
+        <tr class="odd">
+            <td class="event">
+                A Poetic Perspective
+            </td>
+            <td>
+                Sat, 5 Mar 2026 <br> 11am - 2pm
+            </td>
+            <td>
+                Sun, 6 Mar 2026 <br> 11am - 2pm
+            </td>
+            <td>
+                Sat, 15 Mar 2026 <br> 11am - 2pm
+            </td>
+        </tr>
+        <tr class="even">
+            <td class="event">
+                Walt Whitman at War
+            </td>
+            <td>
+                Sat, 7 Mar 2026 <br> 11am - 1pm
+            </td>
+            <td>
+                Sun, 8 Mar 2026 <br> 11am - 1pm
+            </td>
+            <td>
+                Sat, 21 Mar 2026 <br> 11am - 1pm
+            </td>
+        </tr>
+        <tr class="odd">
+            <td class="event">
+                Found Poems and Outsider Poetry
+            </td>
+            <td>
+                Tue, 9 Mar 2026 <br> 11am - 2pm
+            </td>
+            <td>
+                Thr, 11 Mar 2026 <br> 11am - 2pm
+            </td>
+            <td>
+                Sat, 21 Mar 2026 <br> 11am - 2pm
+            </td>
+        </tr>
+        <tr class="even">
+            <td class="event">
+                Natural Art: An Exploration
+            </td>
+            <td>
+                Mon, 7 Mar 2026 <br> 11am - 4pm
+            </td>
+            <td>
+                Fri, 12 Mar 2026 <br> 11am - 4pm
+            </td>
+            <td>
+                Sat, 21 Mar 2026 <br> 11am - 4pm
+            </td>
+        </tr>
+    </table>
+
+    <form action="" method="post"> 
+        <fieldset>
+            <legend>
+                Register your interest
+            </legend>
+            <p>
+                <div>
+                    <label for="name" class="title">
+                        Your name:
+                    </label> <br>
+                    <input type="text" name="name" id="name">
+                </div>
+                
+                <div>
+                    <label for="email" class="title">
+                        Your email:
+                    </label> <br>
+                    <input type="text" name="email" id="email">
+                </div>
+            </p>
+            <p>
+                <label for="location" class="title">
+                    Your closest center:
+                </label>
+                <select name="location" id="location">
+                    <option value="ny">New York</option>
+                    <option value="cg">Chicago</option>
+                    <option value="sf">San Fransisco</option>
+                </select>
+            </p>
+            
+            <span>
+                Are you a member?
+            </span>
+            
+            <label>
+                <input type="radio" name="member" value="yes" />Yes
+                <input type="radio" name="member" value="no" />No
+            </label>
+            
+            <div class="submit">
+                <input type="submit" name="submit" value="Register">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
