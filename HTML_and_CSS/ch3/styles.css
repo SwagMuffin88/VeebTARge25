@@ -63,6 +63,16 @@ legend {
     right: 0;
 }
 
-input[type='submit'].submit {
-    background-color: green;
+input[type='submit'] {
+    background-color: #369900;
+    border: 1px solid #006633;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+input[type='submit']:hover {
+    background-color: #296b05;
+    cursor: pointer;
 }
