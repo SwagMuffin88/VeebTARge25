@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(/fonts/Quicksand_Book-webfont.ttf);
+}
+
+body {
+    min-width: 960px;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    background-image: url("/images/pedal/bg.jpg");
+    margin: 0;
+    font-size: 90%;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 240%;
+    margin-top: 140px;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: #d0d4b7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #aeb5a1;
+}
+
+.date {
+    color: #d0d4b7;
+}
+
+.header {
+    background-image: url(/images/pedal/bg-header.jpg);
+    background-repeat: repeat-x;
+    padding: 0 0 0 0;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.nav {
+    float: right;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    padding: 45px 0 0 0;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background-image: url(/images/pedal/bg-triangle.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-align: left;
+}
+
+.intro {
+    clear: right;
+    font-size: 90%;
+    line-height: 1.4em;
+    float: right;
+    margin-top: 180px;
+}
+
+.main_story {
+    background-image: url(/images/pedal/triangles.png);
+    background-repeat: no-repeat;
+    background-position: 122px 142px;
+    height: 570px;
+}
+
+.more_articles {
+    padding: 0;
+}
+
+.more_articles p {
+    padding: 5px 0 15px 0;
+}
+
+.footer {
+    clear: both;
+    background: rgba(0, 0, 0, 2);
+    padding: 5px 10px;
+}

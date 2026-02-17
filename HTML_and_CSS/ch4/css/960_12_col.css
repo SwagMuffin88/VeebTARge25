@@ -13,35 +13,6 @@
   Note: IE6 works fine without this fix.
 */
 
-@font-face {
-  font-family: Quicksand;
-  src: url(/fonts/Quicksand_Book-webfont.ttf);
-}
-
-body {
-  min-width: 960px;
-  font-family: Quicksand, sans-serif;
-  background-image: url("/images/pedal/bg.jpg");
-  overflow: scroll;
-}
-
-h1 {
-  font-weight: bold;
-}
-
-p {
-  color: white;
-}
-
-a {
-  color: #d0d4b7;
-  text-decoration: none;
-}
-
-.date {
-  color: #d0d4b7;
-}
-
 /* `Containers
 ----------------------------------------------------------------------------------------------------*/
 
