@@ -87,7 +87,6 @@
                     <input
                             class="form-check-input"
                             type="checkbox"
-                            value=""
                             id="parentCheckBox">
                     <label class="form-check-label" for="parentCheckBox">
                         Indeterminate checkbox
@@ -99,7 +98,6 @@
                         <input
                                 class="form-check-input child-check"
                                 type="checkbox"
-                                value=""
                                 id="c1">
                         <label class="form-check-label" for="c1">
                             Option 1
@@ -110,46 +108,50 @@
                         <input
                                 class="form-check-input child-check"
                                 type="checkbox"
-                                value=""
                                 id="c2">
-                        <label class="form-check-label" for="c1">
+                        <label class="form-check-label" for="c2">
                             Option 2
                         </label>
                     </div>
                 </div>
+
+                <div class="form-check">
+                    <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioDefault"
+                            id="radioDefault">
+                    <label class="form-check-label" for="radioDefault">
+                        Default radio
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioDefault"
+                            id="radioDefault2"
+                            checked="checked">
+                    <label class="form-check-label" for="radioDefault2">
+                        Default checked radio
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioDefault"
+                            id="radioDefault3"
+                            disabled="disabled">
+                    <label class="form-check-label" for="radioDefault3">
+                        Default disabled radio
+                    </label>
+                </div>
             </div>
         </div>
     </div>
-
-    <script>
-        const parentCheckBox = document.getElementById("parentCheckBox");
-        const children = document.querySelectorAll(".child-check")
-
-        const c1 = document.getElementById("c1");
-        const c2 = document.getElementById("c2");
-
-        function updateParent() {
-            const checked = [...children].filter(c => c.checked).length;
-
-            if (checked === 0) {
-                parentCheckBox.checked = false;
-                parentCheckBox.indeterminate = true;
-            } else if (checked === children.length) {
-                parentCheckBox.checked = true;
-                parentCheckBox.indeterminate = false;
-            } else {
-                parentCheckBox.checked = false;
-                parentCheckBox.indeterminate = true;
-            }
-        }
-
-        children.forEach(c => c.addEventListener("change", updateParent));
-
-        parentCheckBox.addEventListener("change", () => {
-            children.forEach( c => c.checked = this.checked)
-            parentCheckBox.indeterminate = true;
-        })
-
-    </script>
+    <script src="indeterminate.js"></script>
 </body>
 </html>
