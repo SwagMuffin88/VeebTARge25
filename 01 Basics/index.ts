@@ -17,6 +17,13 @@ function renderUserDetails(user: User) {
     )
 }
 
+function renderNewUserDetails(newUser: Pick<User, "name" | "age">) {
+    console.log(
+        newUser.name,
+        newUser.age
+    )
+}
+
 const user: User = {
     id: "1",
     name: "Kyle",
@@ -28,3 +35,7 @@ const user: User = {
 }
 
 renderUserDetails(user)
+renderNewUserDetails({
+    name: "Kelly",
+    age: 26
+})

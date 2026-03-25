@@ -1,6 +1,9 @@
 function renderUserDetails(user) {
     console.log(user.name, user.age);
 }
+function renderNewUserDetails(newUser) {
+    console.log(newUser.name, newUser.age);
+}
 var user = {
     id: "1",
     name: "Kyle",
@@ -11,3 +14,7 @@ var user = {
     }
 };
 renderUserDetails(user);
+renderNewUserDetails({
+    name: "Kelly",
+    age: 26
+});
