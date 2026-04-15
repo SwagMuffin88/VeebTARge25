@@ -1,12 +1,14 @@
 import style from "./Keyboard.module.css"
 
 const KEYS = [
-    ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"],
-    ["k", "l", "m", "n", "o", "p", "q", "r", "s"],
-    ["t", "u", "v", "w", "x", "y", "z"],
-];
+    "a", "b", "c", "d", "e", "f", "g",
+    "h", "i", "j", "k", "l", "m", "n",
+    "o", "p", "q", "r", "s", "t", "u",
+    "v", "w", "x", "y", "z"
+]
 
 type KeyboardProps = {
+    // peale kaotust ei saaks nuppe vajutada
     disabled: boolean;
     activeLetters: string[];
     inactiveLetters: string[];
@@ -22,11 +24,13 @@ export function Keyboard({
     return (
         <div
             style={{
-                display: "flex",
+                display: "grid",
+                width: "800px",
                 gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
-                gap: ".5em"
+                gap: ".5rem"
             }}
         >
+            {/* kontrollitakse sisestatud tähti */}
             {KEYS.map(key => {
                 const isActive = activeLetters.includes(key)
                 const isInactive = inactiveLetters.includes(key)
